@@ -28,9 +28,11 @@ var vm = new Vue({
       },
     ],
     
-    message2: "強く、美しく、しなやかに、<br class='br_on500'>髪がよみがえる実感",
+    message2: "さらに<br>「TOKIO HYPER INKARAMI」は<br>ケラチン濃度を<span>20%アップ</span><br>インカラミ効果を<span>最大化</span><br>することで<br>毛髪強度回復は<span>140%以上</span>",
   },
 });
+
+
 
 var vm = new Vue({
   el: "#section02",
@@ -38,9 +40,9 @@ var vm = new Vue({
     // h2
     text1: "週<span>2</span>回、<span>月</span>曜日と<span>木</span>曜日の使用で<br class='br_on500'>効果実感！",
 
-    text5: 'まずは週<span>2</span>回<br>TOKIO HOMEをお試しください。',
+    text5: 'HYPER INKARAMI HOME<br>をお試しください。',
     // h3
-    text2: "<strong>おうちでサロンケア</strong><br>TOKIOインカラミトリートメントの<br><span>効果持続</span>が<span>最大化</span>します。",
+    text2: "<strong>おうちでサロンケア</strong><br>持続力だけじゃない、<br>唯一<span>補強</span>と<span>保湿</span>を同時に<br>叶えることが可能です。",
 
     // h4
     text3: 'その持続の理由は簡単!!<br>サロンで使用するトリートメントと<br class="br_on500">同じ成分を使用した<br>”業界初の集中ケアマスク”',
@@ -89,6 +91,12 @@ var vm = new Vue({
         heading: '紫外線から守る',
         body: 'フラーレンの働きによって、活性酸素を除去します。',
         int: 'odd',
+      },
+      {
+        id:4,
+        heading: '髪を引き締める',
+        body: '３種のケラチンを配合、髪を補強します。',
+        int: 'even',
       }
     ],
   }
@@ -111,7 +119,7 @@ var vm = new Vue({
         {
             id:2,
             img: 'images/tokio-home_002.png',
-            body: '手のひらに3センチ程スライム状のHOMEを出してから',
+            body: '10円玉大暗いの量を目安にして、スライム状のHOMEを手のひらに出します。',
             alt: "TOKIO HOMEを手に",
         },
         {
@@ -123,7 +131,7 @@ var vm = new Vue({
         {
             id:4,
             img: 'images/tokio-home_004.png',
-            body: '5分ほど放置して流します<br><span>※タオルで巻いたり、シャワーキャップをかぶることで質感UPを狙えます。</span> ',
+            body: '5分ほど放置して流します<br><span>※塗布後に串で髪全体をとかしてもらうと馴染みが更に良くなり、質感が際立ちます。</span> ',
             alt: "TOKIO HOMEを放置",
         },
       ]
@@ -164,8 +172,10 @@ var vm = new Vue({
 var vm = new Vue({
   el: '#section10',
   data: {
-    topMessage1: '毎日のホームケアが変わる！<br>TOKIO IE<br class="br_on375">インカラミシャンプー・トリートメントを<br>オススメします',
-    topMessage: '週2回のTOKIO HOMEと毎日の<br>TOKIO IE<br class="br_on375">インカラミシャンプートリートメントで<br>自分史上最高の美髪を手に入れましょう！',
+    topMessage1: 'さらに「TOKIO IE HYPER INKARAM」<br>を合わせて使用すると<br class="br_on375">効果実感アップ',
+    topMessage: 'このシリーズは選ばれたサロンの<br>店舗でしか手に入らない',
+    topMessage2: '「TOKIOハイパーインカラミ」のノウハウを<br>取り得れた<br><strong>化学反応するシャンプー・トリートメント</strong><br>それによって、',
+    topMessage3: 'ご自宅で、サロンケアをするという新発想で、<br>新しいヘアケアの常識をご提案します。',
     images: [
       {imgURL: 'images/tokio_bg001.png', alt: 'TOKIO インカラミ'},
       {imgURL: 'images/tokio_bg002.png', alt: 'TOKIO インカラミ'},

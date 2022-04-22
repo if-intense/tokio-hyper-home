@@ -65,15 +65,20 @@ S .col-center {
   padding: 4vh 0;
   line-height: 2em;
 }
-.mid-banner strong {
-  font-size: 2em;
-  color: #bb1e1e;
-  padding: 0 2px;
-  font-weight: bold;
+.mid-banner p {
+  font-size: 1.25em;
+  line-height: 3em;
 }
-.mid-banner span {
+.mid-banner p em {
+  text-emphasis: filled;
+  font-style: normal;
+}
+.mid-banner p span {
   font-size: 2em;
-  color: #bb1e1e;
+  -webkit-text-fill-color: white;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
   padding: 20px 2px;
   font-weight: bold;
 }
@@ -203,12 +208,8 @@ S .col-center {
   margin: 3vh auto;
 }
 .main .sect01 .sect01-top h2 {
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 3em;
-}
-.main .sect01 .sect01-top h2 span {
-  font-size: 2em;
-  position: relative;
 }
 .main .sect01 .sect01-top h3 {
   line-height: 2em;
@@ -318,6 +319,10 @@ S .col-center {
 }
 .main .sect01 .sect01-03 h6 {
   font-size: 2em;
+  line-height: 2em;
+}
+.main .sect01 .sect01-03 h6 span {
+  font-weight: bold;
 }
 .main .sect01 .sect01-03 .points {
   margin: 2vh auto;
@@ -532,6 +537,7 @@ S .col-center {
 .main .sect02 .sect02-01 .product-info .product-info-bottom {
   text-align: center;
   font-size: 1.5em;
+  line-height: 2em;
   margin-bottom: 10vh;
 }
 .main .sect03 {
@@ -944,6 +950,11 @@ S .col-center {
   color: #fff;
 }
 
+@media screen and (max-width: 1024px) {
+  .main .sect02 .sect02-01 .product-info .product-info-bottom {
+    font-size: 1.25em;
+  }
+}
 @media screen and (max-width: 992px) {
   .main .sect01 .sect01-01 {
     width: 100%;
@@ -1017,14 +1028,22 @@ S .col-center {
     padding-left: 0;
     padding-right: 0;
   }
+
+  .mid-banner p span {
+    font-size: 1.75em;
+  }
 }
 @media screen and (max-width: 500px) {
   .br_on500 {
     display: block;
   }
 
+  .mid-banner p span {
+    font-size: 1.5em;
+  }
+
   .main .sect01 .sect01-top h3 {
-    font-size: 1.25em;
+    font-size: 1em;
   }
   .main .sect01 .sect01-02 h3 {
     font-size: 1.5em;
@@ -1060,8 +1079,12 @@ S .col-center {
   }
 }
 @media screen and (max-width: 428px) {
+  .mid-banner p span {
+    font-size: 1.4em;
+  }
+
   .main .sect01 .sect01-top h3 {
-    font-size: 1.1em;
+    font-size: 0.9em;
   }
   .main .sect01 .sect01-top h4 {
     font-size: 1.25em;
@@ -1104,8 +1127,11 @@ S .col-center {
   .main .sect04 .steps .inner .text-area .text-top h5 {
     font-size: 1em;
   }
-  .main .sect09 .container h4 {
-    font-size: 1.25em;
+  .main .sect09 .container h4.strengthen {
+    font-size: 1.2em;
+  }
+  .main .sect09 .container h3 {
+    font-size: 1.5em;
   }
   .main .sect10 .section10-01 h3 {
     font-size: 1em;
@@ -1118,6 +1144,9 @@ S .col-center {
   .main .sect01 .sect01-01 .points .inner .text-bottom p {
     font-size: 1em;
   }
+  .main .sect01 .sect01-top h2 {
+    font-size: 1.25em;
+  }
   .main .sect04 .steps .inner .text-area .text-top h5 {
     font-size: 0.9em;
   }
@@ -1127,10 +1156,22 @@ S .col-center {
   .main .sect04 .steps .inner .text-area .text-bottom p {
     font-size: 0.8em;
   }
+  .main .sect09 .container h3 {
+    font-size: 1.25em;
+  }
+  .main .sect09 .container h4 {
+    font-size: 1.25em;
+  }
 }
 @media screen and (max-width: 400px) {
-  .main .sect10 .section10-01 h3 {
+  .main .sect01 .sect01-top h2 {
     font-size: 1em;
+  }
+  .main .sect02 .sect02-01 .product-info .points .part {
+    margin-bottom: -8vh;
+  }
+  .main .sect10 .section10-01 h3 {
+    font-size: 0.9em;
   }
 }
 @media screen and (max-width: 375px) {
@@ -1138,11 +1179,18 @@ S .col-center {
     display: block;
   }
 
+  .mid-banner p {
+    font-size: 1em;
+  }
+
   .main .sect01 .sect01-01 .points .inner .text-top h4 {
     font-size: 2em;
   }
   .main .sect01 .sect01-01 .points .inner .text-bottom p {
     font-size: 1em;
+  }
+  .main .sect01 .sect01-top h2 {
+    font-size: 1.25em;
   }
   .main .sect02 .sect02-01 h3 {
     font-size: 1.05em;
@@ -1163,11 +1211,11 @@ S .col-center {
   .main .sect04 h3 {
     font-size: 1.25em;
   }
-  .main .sect09 .container h4 {
-    font-size: 1.25em;
+  .main .sect09 .container h4.strengthen {
+    font-size: 1em;
   }
   .main .sect09 .container h3 {
-    font-size: 1.25em;
+    font-size: 1em;
   }
   .main .sect10 .section10-01 h3 {
     font-size: 1em;

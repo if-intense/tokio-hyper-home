@@ -5,7 +5,7 @@
 var vm = new Vue({
   el: "#topSection",
   data: {
-    message1: '大好評',
+    message1: '選ばれたサロンでしか手に入らない',
     message2: '専用集中ケアパック',
     message3: 'TOKIO HOME<br>3つのPoint',
     mainPoints: [

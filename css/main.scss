@@ -78,18 +78,22 @@ S .col-center {
     text-align: center;
     padding:4vh 0;
     line-height: 2em;
-    strong {
-        font-size: 2em;
-        color: #bb1e1e;
-        padding:0 2px;
-        font-weight: bold;
-    }
-    span {
-        // padding:20px;
-        font-size: 2em;
-        color: #bb1e1e;
-        padding:20px 2px;
-        font-weight: bold;
+    p {
+        font-size: 1.25em;
+        line-height: 3em;
+        em {
+            text-emphasis: filled;
+            font-style: normal;
+        }
+        span {
+            // padding:20px;
+            font-size: 2em;
+            -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+            padding:20px 2px;
+            font-weight: bold;
+        }
     }
 }
 
@@ -234,12 +238,8 @@ S .col-center {
         .sect01-top {
             margin: 3vh auto;
             h2 {
-                font-size: 2em;
+                font-size: 1.5em;
                 line-height: 3em;
-                span {
-                    font-size: 2em;
-                    position: relative;
-                }
             }
             h3 {
                 line-height: 2em;
@@ -369,6 +369,10 @@ S .col-center {
             }
             h6 {
                 font-size: 2em;
+                line-height: 2em;
+                span {
+                    font-weight: bold;
+                }
             }
             // padding:3vh 0;
             .points {
@@ -611,6 +615,7 @@ S .col-center {
                 .product-info-bottom {
                     text-align: center;
                     font-size: 1.5em;
+                    line-height: 2em;
                     margin-bottom: 10vh;
                 }
             }
@@ -1078,6 +1083,20 @@ background: linear-gradient(180deg, rgba(223,247,246,1) 0%, rgba(0,159,149,1) 10
     }
 }
 
+@media screen and (max-width:1024px) {
+    .main {
+        .sect02 {
+            .sect02-01 {
+                .product-info {
+                    .product-info-bottom {
+                        font-size: 1.25em;
+                    }
+                }
+            }
+        }
+    }    
+}
+
 @media screen and (max-width: 992px) {
     .main {
         .sect01 {
@@ -1184,6 +1203,13 @@ background: linear-gradient(180deg, rgba(223,247,246,1) 0%, rgba(0,159,149,1) 10
             }
         }
     }
+    .mid-banner {
+        p {
+            span {
+                font-size: 1.75em;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -1191,11 +1217,19 @@ background: linear-gradient(180deg, rgba(223,247,246,1) 0%, rgba(0,159,149,1) 10
         display: block;
     }
 
+
+    .mid-banner {
+        p {
+            span {
+                font-size: 1.5em;
+            }
+        }
+    }
     .main {
         .sect01 {
             .sect01-top {
                 h3 {
-                    font-size: 1.25em;
+                    font-size: 1em;
                     // color:red;
                 }
             }
@@ -1257,11 +1291,18 @@ background: linear-gradient(180deg, rgba(223,247,246,1) 0%, rgba(0,159,149,1) 10
 }
 
 @media screen and (max-width: 428px) {
+    .mid-banner {
+        p {
+            span {
+                font-size: 1.4em;
+            }
+        }
+    }
     .main {
         .sect01 {
             .sect01-top {
                 h3 {
-                    font-size: 1.1em;
+                    font-size: 0.9em;
                     // color:red;
                 }
                 h4 {
@@ -1326,8 +1367,11 @@ background: linear-gradient(180deg, rgba(223,247,246,1) 0%, rgba(0,159,149,1) 10
         }
         .sect09 {
             .container {
-                h4 {
-                    font-size: 1.25em;
+                h4.strengthen {
+                    font-size: 1.2em;
+                }
+                h3 {
+                    font-size: 1.5em;
                 }
             }
         }
@@ -1360,6 +1404,11 @@ background: linear-gradient(180deg, rgba(223,247,246,1) 0%, rgba(0,159,149,1) 10
                     }
                 }
             }
+            .sect01-top {
+                h2 {
+                    font-size: 1.25em;
+                }
+            }
         }
         .sect04 {
             .steps {
@@ -1383,15 +1432,43 @@ background: linear-gradient(180deg, rgba(223,247,246,1) 0%, rgba(0,159,149,1) 10
                 }
             }
         }
+        .sect09 {
+            .container {
+                h3 {
+                    font-size: 1.25em;
+                }
+                h4 {
+                    font-size: 1.25em;
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width: 400px) {
     .main {
+        .sect01 {
+            .sect01-top {
+                h2 {
+                    font-size: 1em;
+                }
+            }
+        }
+        .sect02 {
+            .sect02-01 {
+                .product-info {
+                    .points {
+                        .part {
+                            margin-bottom: -8vh;
+                        }
+                    }
+                }
+            }
+        }
         .sect10 {
             .section10-01 {
                 h3 {
-                    font-size: 1em;
+                    font-size: 0.9em;
                 }
             }
         }
@@ -1401,6 +1478,11 @@ background: linear-gradient(180deg, rgba(223,247,246,1) 0%, rgba(0,159,149,1) 10
 @media screen and (max-width: 375px) {
     .br_on375 {
         display:block;
+    }
+    .mid-banner {
+        p {
+            font-size: 1em;
+        }
     }
     .main {
         .sect01 {
@@ -1418,6 +1500,11 @@ background: linear-gradient(180deg, rgba(223,247,246,1) 0%, rgba(0,159,149,1) 10
                             }
                         }
                     }
+                }
+            }
+            .sect01-top {
+                h2 {
+                    font-size: 1.25em;
                 }
             }
         }
@@ -1454,11 +1541,11 @@ background: linear-gradient(180deg, rgba(223,247,246,1) 0%, rgba(0,159,149,1) 10
         }
         .sect09 {
             .container {
-                h4 {
-                    font-size: 1.25em;
+                h4.strengthen {
+                    font-size: 1em;
                 }
                 h3 {
-                    font-size: 1.25em;
+                    font-size: 1em;
                 }
             }
         }
