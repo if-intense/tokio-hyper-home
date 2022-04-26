@@ -178,7 +178,7 @@ var vm = new Vue({
     topMessage3: 'ご自宅で、サロンケアをするという新発想で、<br>新しいヘアケアの常識をご提案します。',
     images: [
       {imgURL: 'images/tokio_bg001.png', alt: 'TOKIO インカラミ'},
-      {imgURL: 'images/tokio_bg002.png', alt: 'TOKIO インカラミ'},
+      // {imgURL: 'images/tokio_bg002.png', alt: 'TOKIO インカラミ'},
     ]
   }
 });

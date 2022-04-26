@@ -7,7 +7,7 @@ var vm = new Vue({
   data: {
     message1: '選ばれたサロンでしか手に入らない',
     message2: '専用集中ケアパック',
-    message3: 'TOKIO HOME<br>3つのPoint',
+    message3: 'TOKIO HYPER HOME<br>3つのPoint',
     mainPoints: [
       {
         ptNum: "Point 1",
