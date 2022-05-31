@@ -20,7 +20,7 @@ S .col-center {
 }
 
 .btn-ifing-beauty {
-  background: #c6bdb7;
+  background: #c8c8c8;
   color: #fff;
 }
 .btn-ifing-beauty:hover {
@@ -205,7 +205,7 @@ S .col-center {
 }
 
 .main {
-  background: #c6bdb7;
+  background: #c8c8c8;
   overflow-x: hidden;
 }
 .main .sect01 {
@@ -227,7 +227,7 @@ S .col-center {
 .main .sect01 .sect01-top h4 {
   font-size: 2em;
   margin-top: 4vh;
-  color: #bb1e1e;
+  color: #895555;
   font-weight: bold;
 }
 .main .sect01 .sect01-01 {
@@ -259,7 +259,7 @@ S .col-center {
   font-size: 2em;
   font-weight: bold;
   text-shadow: 1px 1px 3px #888888;
-  color: #fff838;
+  color: #c5e4f0;
 }
 .main .sect01 .sect01-01 .points .inner .text-top {
   margin-bottom: 10px;
@@ -507,7 +507,7 @@ S .col-center {
   width: 100%;
   height: 0;
   border-radius: 50%;
-  background-color: rgba(255, 242, 169, 0.77);
+  background-color: rgba(205, 157, 117, 0.8);
   border: 2px solid white;
   content: "";
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.33);
@@ -550,7 +550,7 @@ S .col-center {
 }
 .main .sect03 {
   height: 100%;
-  background: #c6bdb7;
+  background: #c8c8c8;
   position: relative;
 }
 .main .sect03 .sect03-title {
@@ -759,7 +759,7 @@ S .col-center {
 }
 .main .sect09 #section09 {
   padding-top: 6vh;
-  background: #c6bdb7;
+  background: #c8c8c8;
 }
 .main .sect09 #section05-01 {
   text-align: center;
@@ -822,8 +822,8 @@ S .col-center {
 }
 .main .sect09 .container h2 {
   text-align: center;
-  background: #dff7f6;
-  background: linear-gradient(180deg, #dff7f6 0%, #009f95 100%);
+  background: #f6ef78;
+  background: linear-gradient(180deg, #f6ef78 0%, #c67272 100%);
   line-height: 2em;
   padding: 2vh 0;
   border-top: 1px solid #005323;
