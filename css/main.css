@@ -52,12 +52,20 @@ S .col-center {
 }
 
 .top-banner {
-  height: calc(100vh - $headerHeight);
+  height: calc(100vh - 80px);
+  background: #949397;
 }
 .top-banner .inner {
   width: 100%;
   max-width: 840px;
   margin: 0 auto;
+  background: url("../images/tokio-home.png") no-repeat;
+  height: 100%;
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .mid-banner {
@@ -296,7 +304,7 @@ S .col-center {
   margin: 4vh auto;
   width: 100%;
   max-width: 900px;
-  padding-top: calc(515 / 900);
+  padding-top: 0.5722222222;
 }
 .main .sect01 .sect01-03 h2 {
   text-align: center;
@@ -329,7 +337,7 @@ S .col-center {
 }
 .main .sect01 .sect01-03 .bg {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url("../images/tokio-home.jpg") no-repeat;
-  background-position: center bottom;
+  background-position: center;
   background-size: cover;
 }
 .main .sect01 .sect01-03 .bg h2 {
