@@ -131,7 +131,7 @@ var vm = new Vue({
         {
             id:4,
             img: 'images/tokio-home_004.png',
-            body: '5分ほど放置して流します<br><span>※塗布後に串で髪全体をとかしてもらうと馴染みが更に良くなり、質感が際立ちます。</span> ',
+            body: '5分ほど放置して流します<br><span>※塗布後にクシで髪全体をとかしてもらうと馴染みが更に良くなり、質感が際立ちます。</span> ',
             alt: "HYPER HOMEを放置",
         },
       ]
